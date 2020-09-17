@@ -21,7 +21,8 @@ $color-sub: #6EB3FF;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px 0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    
+    align-items: center;
+
     .logo {
         font-family: 'Bebas Neue', cursive;
         font-size: 32px;
@@ -33,19 +34,34 @@ $color-sub: #6EB3FF;
         }
     }
 
+    .link {
+        a {
+           text-decoration: none;
+           padding: 30px;
+           transition: 0.3s;
+
+           &:hover {
+                color: $color-sub;    
+           }
+         }
+    }
 
 
     .social {
+
+        text-align: right;
         
         img {
             filter: invert(100%) sepia(2%) saturate(2865%) hue-rotate(235deg) brightness(117%) contrast(87%);
             transition: 0.2s;
+            width: 32px;
+            margin-left: 30px;
 
             &:hover {
                 filter: invert(11%) sepia(9%) saturate(3438%) hue-rotate(169deg) brightness(96%) contrast(95%);
                    
             }
-           
+         
         }
     }
 }
