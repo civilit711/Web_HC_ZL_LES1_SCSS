@@ -1,6 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300;400&display=swap');
 
-h1 {
-    font-family: 'cursive';
-    color: #333;
+// 主色與次要色
+
+$color-main: #252525;
+$color-sub: #6EB3FF;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    color: $color-main;
+}
+
+
+
+//導覽列//
+#navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    
+    .logo {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 32px;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+            color: $color-sub;
+        }
+    }
+
+
+
+    .social {
+        
+        img {
+            filter: invert(100%) sepia(2%) saturate(2865%) hue-rotate(235deg) brightness(117%) contrast(87%);
+            transition: 0.2s;
+
+            &:hover {
+                filter: invert(11%) sepia(9%) saturate(3438%) hue-rotate(169deg) brightness(96%) contrast(95%);
+                   
+            }
+           
+        }
+    }
 }
