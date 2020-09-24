@@ -5,6 +5,7 @@
 $color-main: #252525;
 $color-sub: #6EB3FF;
 $color-bg-gray:#f9f9f9;
+$color-white: #cdcdcd;
 
 //文字大小:最大
 $font-size-big: 36px;
@@ -26,53 +27,55 @@ $font-family-main: "Bebas Neue", cursive;
 #navigation {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px 0;
+    padding: 20px 120px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     align-items: center;
+    position: fixed;
+    width: 100px;
+    background: white;
+}
 
-    .logo {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 32px;
-        text-decoration: none;
-        transition: 0.3s;
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 42px;
+    text-decoration: none;
+    transition: 0.3s;
+    letter-spacing: 2px;
 
-        &:hover {
-            color: $color-sub;
-        }
-    }
-
-    .link {
-        a {
-           text-decoration: none;
-           padding: 30px;
-           transition: 0.3s;
-
-           &:hover {
-                color: $color-sub;    
-           }
-         }
-    }
-
-
-    .social {
-
-        text-align: right;
-        
-        img {
-            filter: invert(100%) sepia(2%) saturate(2865%) hue-rotate(235deg) brightness(117%) contrast(87%);
-            transition: 0.2s;
-            width: 32px;
-            margin-left: 30px;
-
-            &:hover {
-                filter: invert(11%) sepia(9%) saturate(3438%) hue-rotate(169deg) brightness(96%) contrast(95%);
-                   
-            }
-         
-        }
+    &:hover {
+        color: $color-sub;
     }
 }
 
+.link {
+    a {
+       text-decoration: none;
+       padding: 30px 30px 30px 40px;
+       transition: 0.3s;
+       letter-spacing: 10px;
+
+       &:hover {
+            color: $color-sub;    
+       }
+    }
+}
+
+
+.social {
+
+    text-align: right;
+    
+    img {
+        filter: invert(100%) sepia(2%) saturate(2865%) hue-rotate(235deg) brightness(117%) contrast(87%);
+        transition: 0.2s;
+        width: 32px;
+        margin-left: 30px;
+
+        &:hover {
+            filter: invert(11%) sepia(9%) saturate(3438%) hue-rotate(169deg) brightness(96%) contrast(95%);
+        }
+    }
+}
 
 #banner {
     width: 100%;
@@ -95,12 +98,12 @@ $font-family-main: "Bebas Neue", cursive;
     p {
         padding: 30px;
         margin-bottom: 50px;
-    
     }
     
     .title {
         font-size: $font-size-big;
-        padding: 20px;
+        padding: 35px;
+        text-align: center;
         
     }  
 }
@@ -118,22 +121,17 @@ $font-family-main: "Bebas Neue", cursive;
     &:hover {
         background: $color-main;
         color: white;
-
     }
-
 }
-
-//標題
-.title {
-    font-size: $font-size-big;
-    padding: 50px;  
+//按鈕外的區塊
+.botton-div {
     text-align: center;
+    margin-top: 50px;
 }
 
-//按鈕;盒型
-.button-box {
 
-}
+
+
 
 
 
@@ -150,41 +148,68 @@ $font-family-main: "Bebas Neue", cursive;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2 ,335px);
         // 格線間隙: 上下 左右
-        grid-gap: 10px 25px;
+        grid-gap: 20px 35px;
 
-        //按鈕外的區塊
-        .botton-div {
-                text-align: center;
-                margin-top: 50px;
-        }
+        
     }
     .work-box-small {
         img {
             display: block;
             width: 100%;
             height: 300px;
-            background: #000;
+            background: #eee;
 
         }
         h2 {
             text-align: center;
             transform: translate(-30px);
-            
         }  
         span {
             display: inline-block;
             border: 1px solid #000;
             border-radius: 30px;
-            padding: 5px 10px;
-            margin-top: 5px;
+            padding: 3px 12px;
+            margin-top: 12px;
+            margin-left: 10px;
+            font-size: 12px;
         }
-
-
-
-
     }
-
-
 }
 
+//頁尾
+footer {
+    background: $color-main;
+    padding: 90px 0;
+    text-align: center;
+    .logo {
+        color: $color-white;
+    }
+    .link {
+            a {
+               color: $color-white;
+            }
+    }
 
+    .social {
+            text-align: center;
+
+            img {
+                filter: invert(88%) sepia(5%) saturate(6%) hue-rotate(23deg) brightness(93%) contrast(92%);
+                margin: 30px 20px;
+            }
+    }
+    #copyright {
+        color: $color-white;
+        font-size: 8px;
+        margin-top: 50px;
+    }
+}
+
+// 小的 LOGO
+.logo-small {
+    color: $color-white;
+    font-family: $font-family-main;
+    letter-spacing: 3px;
+    padding-left: 3px;
+    font-size: 16px;
+}
