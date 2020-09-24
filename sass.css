@@ -21,7 +21,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  width: 100px;
+  width: 100%;
   background: white;
 }
 
@@ -93,7 +93,7 @@
   margin-bottom: 50px;
 }
 
-#about .title {
+.title {
   font-size: 36px;
   padding: 35px;
   text-align: center;
@@ -181,7 +181,7 @@ footer .social img {
   margin: 30px 20px;
 }
 
-footer #copyright {
+footer .copyright {
   color: #cdcdcd;
   font-size: 8px;
   margin-top: 50px;
