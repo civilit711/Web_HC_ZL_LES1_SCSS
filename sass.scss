@@ -4,6 +4,7 @@
 
 $color-main: #252525;
 $color-sub: #6EB3FF;
+$color-bg-gray:#f9f9f9;
 
 //文字大小:最大
 $font-size-big: 36px;
@@ -107,7 +108,7 @@ p {
     padding: 20px;
     
 }
-
+//按鈕;盒型
 .botton-box {
     padding: 10px 60px;
     border: 2px solid $color-main;
@@ -121,3 +122,22 @@ p {
     }
 
 }
+
+//標題
+.title {
+    font-size: $font-size-big;
+    padding: 50px;  
+    text-align: center;
+}
+
+//按鈕;盒型
+.button-box {
+
+}
+
+//作品集
+#work {
+    height: 100vh;
+    background: $color-bg-gray;
+}
+

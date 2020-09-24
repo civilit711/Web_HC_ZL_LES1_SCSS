@@ -105,4 +105,15 @@ p {
   background: #252525;
   color: white;
 }
+
+.title {
+  font-size: 36px;
+  padding: 50px;
+  text-align: center;
+}
+
+#work {
+  height: 100vh;
+  background: #f9f9f9;
+}
 /*# sourceMappingURL=sass.css.map */
