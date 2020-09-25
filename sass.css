@@ -99,7 +99,7 @@
   text-align: center;
 }
 
-.botton-box {
+.button-box {
   padding: 10px 60px;
   border: 2px solid #252525;
   text-decoration: none;
@@ -107,7 +107,7 @@
   transition: 0.3s;
 }
 
-.botton-box:hover {
+.button-box:hover {
   background: #252525;
   color: white;
 }
