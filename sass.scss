@@ -40,6 +40,17 @@ $mobile: 767px;
     position: fixed;
     width: 100%;
     background: white;
+
+    #menu {
+        //桌電:隱藏
+        @media screen and (min-width: $desktop) {
+            display: none;            
+        }
+        //平板:顯示
+        @media screen and (max-width: $table) {
+            display: block;            
+        }
+    }
 }
 
 .logo {
@@ -135,7 +146,7 @@ $mobile: 767px;
     }
 }
 //按鈕外的區塊
-.botton-div {
+.button-div {
     text-align: center;
     margin-top: 50px;
 }
@@ -173,7 +184,7 @@ $mobile: 767px;
         }
         h2 {
             text-align: center;
-            transform: translate(-30px);
+            transform: translateY(-30px);
         }  
         span {
             display: inline-block;

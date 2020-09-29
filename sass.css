@@ -25,6 +25,18 @@
   background: white;
 }
 
+@media screen and (min-width: 1025px) {
+  #navigation #menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #navigation #menu {
+    display: block;
+  }
+}
+
 .logo {
   font-family: 'Bebas Neue', cursive;
   font-size: 42px;
@@ -118,7 +130,7 @@
   color: white;
 }
 
-.botton-div {
+.button-div {
   text-align: center;
   margin-top: 50px;
 }
@@ -149,8 +161,8 @@
 
 #works .work-box-small h2 {
   text-align: center;
-  -webkit-transform: translate(-30px);
-          transform: translate(-30px);
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 #works .work-box-small span {
