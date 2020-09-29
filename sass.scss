@@ -41,19 +41,29 @@ $mobile: 767px;
     width: 100%;
     background: white;
 
+    //平板
+    @media screen and (max-width: $table) {
+        //格線樣板區域: " 區域名稱 "
+        grid-template-areas: "logo social menu";
+    }
+
     #menu {
+        grid-area: menu;
+
         //桌電:隱藏
         @media screen and (min-width: $desktop) {
             display: none;            
         }
         //平板:顯示
         @media screen and (max-width: $table) {
-            display: block;            
+            display: block;
+            margin-left: auto;            
         }
     }
 }
 
 .logo {
+    grid-area: logo;
     font-family: 'Bebas Neue', cursive;
     font-size: 42px;
     text-decoration: none;
@@ -66,6 +76,7 @@ $mobile: 767px;
 }
 
 .link {
+    grid-area: link;
     a {
        text-decoration: none;
        padding: 30px 30px 30px 40px;
@@ -86,7 +97,7 @@ $mobile: 767px;
 
 
 .social {
-
+    grid-area: social;
     text-align: right;
     
     img {

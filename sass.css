@@ -25,6 +25,16 @@
   background: white;
 }
 
+@media screen and (max-width: 1024px) {
+  #navigation {
+        grid-template-areas: "logo social menu";
+  }
+}
+
+#navigation #menu {
+  grid-area: menu;
+}
+
 @media screen and (min-width: 1025px) {
   #navigation #menu {
     display: none;
@@ -34,10 +44,12 @@
 @media screen and (max-width: 1024px) {
   #navigation #menu {
     display: block;
+    margin-left: auto;
   }
 }
 
 .logo {
+  grid-area: logo;
   font-family: 'Bebas Neue', cursive;
   font-size: 42px;
   text-decoration: none;
@@ -48,6 +60,10 @@
 
 .logo:hover {
   color: #6EB3FF;
+}
+
+.link {
+  grid-area: link;
 }
 
 .link a {
@@ -69,6 +85,7 @@
 }
 
 .social {
+  grid-area: social;
   text-align: right;
 }
 
