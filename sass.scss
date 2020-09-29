@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@300;400&display=swap");
 
 // 主色與次要色
 
 $color-main: #252525;
-$color-sub: #6EB3FF;
-$color-bg-gray:#f9f9f9;
+$color-sub: #6eb3ff;
+$color-bg-gray: #f9f9f9;
 $color-white: #cdcdcd;
 
 //文字大小:最大
@@ -13,12 +13,10 @@ $font-size-big: 36px;
 //字體大小
 $font-family-main: "Bebas Neue", cursive;
 
-
 //RWD
 $desktop: 1025px;
 $table: 1024px;
 $mobile: 767px;
-
 
 * {
     padding: 0;
@@ -27,8 +25,6 @@ $mobile: 767px;
     font-family: 微軟正黑體;
     color: $color-main;
 }
-
-
 
 //導覽列//
 #navigation {
@@ -52,19 +48,19 @@ $mobile: 767px;
 
         //桌電:隱藏
         @media screen and (min-width: $desktop) {
-            display: none;            
+            display: none;
         }
         //平板:顯示
         @media screen and (max-width: $table) {
             display: block;
-            margin-left: auto;            
+            margin-left: auto;
         }
     }
 }
 
 .logo {
     grid-area: logo;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     font-size: 42px;
     text-decoration: none;
     transition: 0.3s;
@@ -78,28 +74,26 @@ $mobile: 767px;
 .link {
     grid-area: link;
     a {
-       text-decoration: none;
-       padding: 30px 30px 30px 40px;
-       transition: 0.3s;
-       letter-spacing: 10px;
+        text-decoration: none;
+        padding: 30px 30px 30px 40px;
+        transition: 0.3s;
+        letter-spacing: 10px;
 
-       &:hover {
-            color: $color-sub;    
-       }
+        &:hover {
+            color: $color-sub;
+        }
     }
 
     //平板: 隱藏
-    @media screen and (max-width: $table){
+    @media screen and (max-width: $table) {
         display: none;
-    } 
+    }
 }
-
-
 
 .social {
     grid-area: social;
     text-align: right;
-    
+
     img {
         filter: invert(100%) sepia(2%) saturate(2865%) hue-rotate(235deg) brightness(117%) contrast(87%);
         transition: 0.2s;
@@ -129,7 +123,7 @@ $mobile: 767px;
         letter-spacing: 20px;
         padding-left: 20px;
         margin-top: 100px;
-    } 
+    }
     p {
         padding: 30px;
         margin-bottom: 50px;
@@ -140,9 +134,7 @@ $mobile: 767px;
     font-size: $font-size-big;
     padding: 35px;
     text-align: center;
-}  
-
-
+}
 
 //按鈕;盒型
 .button-box {
@@ -162,13 +154,6 @@ $mobile: 767px;
     margin-top: 50px;
 }
 
-
-
-
-
-
-
-
 //作品集
 #works {
     height: 100vh;
@@ -179,24 +164,28 @@ $mobile: 767px;
         margin: 0 auto;
         //repeat( 數量，一格寬度)
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2 ,335px);
+        grid-template-rows: repeat(2, 335px);
         // 格線間隙: 上下 左右
         grid-gap: 20px 35px;
-     
-    }
 
+        //平板
+        @media screen and (max-width: $table) {
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 30px;
+        }
+    
     .work-box-small {
         img {
             display: block;
             width: 100%;
             height: 300px;
             background: #eee;
-
         }
         h2 {
             text-align: center;
             transform: translateY(-30px);
-        }  
+        }
         span {
             display: inline-block;
             border: 1px solid #000;
@@ -218,18 +207,18 @@ footer {
         color: $color-white;
     }
     .link {
-            a {
-               color: $color-white;
-            }
+        a {
+            color: $color-white;
+        }
     }
 
     .social {
-            text-align: center;
+        text-align: center;
 
-            img {
-                filter: invert(88%) sepia(5%) saturate(6%) hue-rotate(23deg) brightness(93%) contrast(92%);
-                margin: 30px 20px;
-            }
+        img {
+            filter: invert(88%) sepia(5%) saturate(6%) hue-rotate(23deg) brightness(93%) contrast(92%);
+            margin: 30px 20px;
+        }
     }
     .copyright {
         color: $color-white;

@@ -50,7 +50,7 @@
 
 .logo {
   grid-area: logo;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 42px;
   text-decoration: none;
   -webkit-transition: 0.3s;
@@ -59,7 +59,7 @@
 }
 
 .logo:hover {
-  color: #6EB3FF;
+  color: #6eb3ff;
 }
 
 .link {
@@ -75,7 +75,7 @@
 }
 
 .link a:hover {
-  color: #6EB3FF;
+  color: #6eb3ff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -167,6 +167,15 @@
   -ms-grid-rows: (335px)[2];
       grid-template-rows: repeat(2, 335px);
   grid-gap: 20px 35px;
+}
+
+@media screen and (max-width: 1024px) {
+  #works #work-box {
+    width: 100%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0 30px;
+  }
 }
 
 #works .work-box-small img {
