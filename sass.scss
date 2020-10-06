@@ -124,10 +124,6 @@ $mobile: 767px;
         @media screen and (max-width: $mobile) {
             margin-left: 0;
         }
-        //桌電
-        @media screen and (min-width: $desktop) {
-            margin-left: 0;
-        }    
 }
 
 #banner {
