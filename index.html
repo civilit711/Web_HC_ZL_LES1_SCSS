@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>作品集</title>
 
+
+    <!--Slick CDN-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <!--AOS CDN-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./sass.css">
 </head>
 
-<body>
+<body id="top">
     <!--導覽列  -->
     <nav id="navigation">
         <a href="./index.html" class="logo">Pei Y.</a>
@@ -30,11 +34,15 @@
         </div>
     </nav>
     <!-- 橫幅 -->
-
-
     <section id="banner">
-
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅1&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅2&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅3&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅4&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅5&font=noto">
     </section>
+
+    <!-- 關於我 -->
     <section id="about">
         <h1 class="title" data-aos="slide-right" data-aos-duration="1000" data-aos-offset="200" data-aos-once="true">關於我</h1>
         <!-- data-aos 動畫-->
@@ -110,6 +118,24 @@
             Coptright &copy; 2010 -2020 KID All rights reserved
         </div>
     </footer>
+
+    <!--返回頂端按鈕-->
+    <img src="./img/arrow.png" alt="返回頂端" id="arrow" data-gte-target="top" data-gte-offset="0" >
+    <!--前往指定元素 CDN-->
+    <script src="https://kid421.github.io/Web_JavaScript_GoToElement/goToElement.js"></script>
+    <!--  jQuery CDN  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--  Slick CDN  -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $("#banner").slick({
+            arrows: false,
+            dots: true,
+            dotsClass: "slick-dots dots"
+        });
+            
+
+    </script>
     
     <!--AOS CDN-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
